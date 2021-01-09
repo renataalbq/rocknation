@@ -14,8 +14,15 @@ main{
 
 .card{
     transition: transform .2s;
+    border: none !important; 
 }
 
 .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.color1, .color2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
