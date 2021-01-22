@@ -6,8 +6,6 @@
     <title>RockNation 2.0</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="data:image/x-icon;base64,AAABAAEAEBACAAAAAACwAAAAFgAAACgAAAAQAAAAIAAAAAEAAQAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAfAAAAcAAAAFAAAABfAAAASQAAAEkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwPwAA4B8AAMAPAACADwAAgA8AAIAPAACADwAAgA8AAIAPAACfzwAAn88AAJ/PAACfzwAAn88AAJ/PAAD//wAA" rel="icon" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Noto+Sans+TC" rel="stylesheet">
     <link rel="stylesheet" href="https://fontawesome.com/icons/cart-arrow-down?style=light">
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/061a93f74a.js" crossorigin="anonymous"></script>
@@ -21,7 +19,7 @@
     <main class="layout-home" id="topo">
         <!-- Header -->
         <header class="header-content text-center p-4">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="imgs/logo.png" alt="">
             </a>
         </header>
@@ -45,7 +43,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">SOBRE NÓS</a>
-                            <a class="dropdown-item" href="#">CONTATO</a>
+                            <a class="dropdown-item" href="contato.html">CONTATO</a>
                         </div>
                       </li>
                       <li class="nav-item dropdown">
@@ -53,10 +51,10 @@
                           REGISTRE-SE
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">ENTRAR</a>
-                            <a class="dropdown-item" href="#">REGISTRE-SE</a>
+                            <a class="dropdown-item" href="login.html">ENTRAR</a>
+                            <a class="dropdown-item" href="login.html">REGISTRE-SE</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">MINHA CONTA</a>
+                            <a class="dropdown-item" href="login.html">MINHA CONTA</a>
                         </div>
                       </li>
                       <li class="nav-item active"><a class="nav-link" href="#">
@@ -67,7 +65,7 @@
                 </ul> 
                 <div class="rounded border">
                   <div class="input-group">
-                    <input type="search" placeholder="Pesquisar" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+                    <input type="search" id="pesquisa" placeholder="Pesquisar" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
                     <div class="input-group-append">
                       <button id="button-addon1" type="submit" class="btn btn-link text-dark"><i class="fas fa-search"></i></button>
                     </div>
@@ -106,89 +104,15 @@
               <strong>PROMOÇÕES</strong>
             </span>
           </h2>
-          <div class="row m-1">
-            <div class="card-deck">
-              <div class="col-sm card">
-                <a href="camisa.html"><img class="card-img-top" src="imgs/slip-frente.png" alt="Imagem de capa do card"></a>
-                <div class="card-body">
-                  <p class="card-text">CAMISETA SLIPKNOT</p>
-                  <span class="card-text">de <s>R$ 40,00</s> por</span> <span class="text-danger font-weight-bold">R$ 30,00</span>
-                  <p class="card-text text-center">3x de R$10,00</p>
-                  <a href="#" class="text-decoration-none text-dark">
-                  <span class="material-icons">
-                    add_shopping_cart
-                  </span></a>
-                </div>
-              </div>
-              <div class="col-sm card">
-                <img class="card-img-top" src="imgs/metallica.png" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <p class="card-text">CAMISETA METALLICA</p>
-                  <span class="card-text">de <s>R$ 40,00</s> por</span> <span class="text-danger font-weight-bold">R$ 30,00</span>
-                  <p class="card-text text-center">3x de R$10,00</p>
-                  <a href="#" class="text-decoration-none text-dark ">
-                  <span class="material-icons">
-                    add_shopping_cart
-                  </span></a>
-                </div>
-              </div>
-              <div class=" col-sm card">
-                <img class="card-img-top" src="imgs/pinkfloyd.png" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <p class="card-text">CAMISETA PINK FLOYD</p>
-                  <span class="card-text">de <s>R$ 40,00</s> por</span> <span class="text-danger font-weight-bold">R$ 30,00</span>
-                  <p class="card-text text-center">3x de R$10,00</p>
-                  <a href="#" class="text-decoration-none text-dark">
-                  <span class="material-icons">
-                    add_shopping_cart
-                  </span></a>
-                </div>
-              </div>
-            </div> 
+          <div id="produtos" class="row m-1">             
           </div>
-        </div> 
-        <div class="container p-2">
-            <div class="row m-1">
-              <div class="card-deck">
-                <div class="col-sm card">
-                  <img class="card-img-top" src="imgs/linkin.png" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <p class="card-text">CAMISETA LINKIN PARK</p>
-                    <span class="card-text">de <s>R$ 40,00</s> por</span> <span class="text-danger font-weight-bold">R$ 30,00</span>
-                    <p class="card-text text-center">3x de R$10,00</p>
-                    <a href="#" class="text-decoration-none text-dark">
-                    <span class="material-icons">
-                      add_shopping_cart
-                    </span></a>
-                  </div>
-                </div>
-                <div class="col-sm card">
-                  <img class="card-img-top" src="imgs/nirvana.png" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <p class="card-text">CAMISETA NIRVANA</p>
-                    <span class="card-text">de <s>R$ 40,00</s> por</span> <span class="text-danger font-weight-bold">R$ 30,00</span>
-                    <p class="card-text text-center">3x de R$10,00</p>
-                    <a href="#" class="text-decoration-none text-dark">
-                    <span class="material-icons">
-                      add_shopping_cart
-                    </span></a>
-                  </div>
-                </div>
-                <div class="col-sm card">
-                  <img class="card-img-top" src="imgs/system.png" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <p class="card-text">CAMISETA SOAD</p>
-                    <span class="card-text">de <s>R$ 40,00</s> por</span> <span class="text-danger font-weight-bold">R$ 30,00</span>
-                    <p class="card-text text-center">3x de R$10,00</p>
-                    <a href="#" class="text-decoration-none text-dark">
-                    <span class="material-icons">
-                      add_shopping_cart
-                    </span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
+        
+          <div id="produtos" class="row m-1">         
+          </div>     
+  
+          <div id="produtos" class="row m-1">
+          </div>
+      </div>
     </main>
 
     <div class="container-fluid bg-light">
@@ -207,6 +131,9 @@
         </div>
       </div>
     </div>
+
+  <!-- Footer -->
+
 
     <footer class="bg-white border-top">
       <div class="container py-5">
@@ -256,6 +183,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
     
 </body>
 </html>

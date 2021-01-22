@@ -8,7 +8,7 @@ body {
 }
 
 main{
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -25,4 +25,13 @@ main{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.text-img{
+    text-transform: uppercase;
+}
+
+form{
+    background-color: white;
+    max-width: 500px;
 }
